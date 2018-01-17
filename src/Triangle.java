@@ -10,5 +10,12 @@ public class Triangle {
         this.b = b;
         this.c = c;
     }
+    double triangleArea(){
+        return this.h * this.a / 2;
+    }
+
+    double trianglePerimeter(){
+        return this.a + this.b + this.c;
+    }
 
 }
