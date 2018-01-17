@@ -6,5 +6,11 @@ public class Rectangle {
         this.a = a;
         this.b = b;
     }
+    double rectangleArea(){
+        return this.a * this.b;
+    }
 
+    double rectanglePerimeter(){
+        return this.a * 2 + this.b * 2;
+    }
 }
