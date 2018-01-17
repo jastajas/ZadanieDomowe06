@@ -6,16 +6,23 @@ public class CalculatorTest {
         Triangle triangle = new Triangle(4,5,6,7);
         Circle circle = new Circle(5);
 
-        ShapeCalculator shapeCalculator = new ShapeCalculator();
+        double rectArea = rectangle.rectangleArea();
+        double rectPerimeter = rectangle.rectanglePerimeter();
+        double circArea = circle.circleArea();
+        double circPerimeter = circle.circlePerimeter();
+        double triaArea = triangle.triangleArea();
+        double triaPerimeter = triangle.trianglePerimeter();
+        double squaArea = square.squareArea();
+        double squaPerimeter = square.squarePerimeter();
 
 
-        System.out.println("Pole koła: " + shapeCalculator.circleArea(circle));
-        System.out.println("Obwód koła: " + shapeCalculator.circlePerimeter(circle));
-        System.out.println("Pole prostokąta: " + shapeCalculator.rectangleArea(rectangle));
-        System.out.println("Obwód prostokąta: " + shapeCalculator.rectanglePerimeter(rectangle));
-        System.out.println("Pole trójkąta: " + shapeCalculator.triangleArea(triangle));
-        System.out.println("Obwód trójkąta: " + shapeCalculator.trianglePerimeter(triangle));
-        System.out.println("Pole kwadratu: " + shapeCalculator.squareArea(square));
-        System.out.println("Obwód kwadratu: " + shapeCalculator.squarePerimeter(square));
+        System.out.println("Pole koła: " + circArea);
+        System.out.println("Obwód koła: " + circPerimeter);
+        System.out.println("Pole prostokąta: " + rectArea);
+        System.out.println("Obwód prostokąta: " + rectPerimeter);
+        System.out.println("Pole trójkąta: " + triaArea);
+        System.out.println("Obwód trójkąta: " + triaPerimeter);
+        System.out.println("Pole kwadratu: " + squaArea);
+        System.out.println("Obwód kwadratu: " + squaPerimeter);
     }
 }
